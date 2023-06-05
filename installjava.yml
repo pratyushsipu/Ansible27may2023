@@ -11,6 +11,6 @@
 
   - name: install java on amazon node
     ansible.builtin.dnf:
-      name: "{{myjavapackonubuntu}}"
+      name: "{{myjavapackonamazon}}"
       state: present 
     when: ansible_os_family =="amazon"
