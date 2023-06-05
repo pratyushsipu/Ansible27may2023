@@ -5,12 +5,12 @@
   - name: install java on ubuntu node
     apt:
       name: "{{myjavapackonubuntu}}"
-      stste: present 
+      state: present 
     when: ansible_os_family =="Debian" 
 
 
   - name: install java on amazon node
     ansible.builtin.dnf:
       name: "{{myjavapackonubuntu}}"
-      stste: present 
+      state: present 
     when: ansible_os_family =="amazon"
