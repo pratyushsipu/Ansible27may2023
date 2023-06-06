@@ -19,13 +19,13 @@
 
   - name: i want to install webserver on RedHat nodes
     ansible.builtin.dnf:
-      name: "{{mywebpackforamazon}}"
+      name: "{{mywebpackforRedHat}}"
       state: present
     when: ansible_os_family =="RedHat"
 
   - name: i want to start webserver on RedHat nodes
     service: 
-      name: "{{mywebpackforamazon}}"
+      name: "{{mywebpackforRedHat}}"
       state: started
     when: ansible_os_family =="RedHat"
 

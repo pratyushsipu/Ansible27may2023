@@ -4,5 +4,5 @@
 
 [mywebserver:vars]
 myvar=value
-mywebpackforubuntu= nginx
-mywebpackforamazon= httpd
+mywebpackforubuntu= apache2
+mywebpackforRedHat= httpd
