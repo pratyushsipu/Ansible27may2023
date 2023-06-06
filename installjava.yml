@@ -6,11 +6,11 @@
     apt:
       name: "{{myjavapackonubuntu}}"
       state: present 
-    when: ansible_os_family =="ubuntu" 
+    when: ansible_os_family =="Debian" 
 
 
-  - name: install java on amazon node
+  - name: install java on RedHat node
     ansible.builtin.dnf:
-      name: "{{myjavapackonamazon}}"
+      name: "{{myjavapackonRedHat}}"
       state: present 
-    when: ansible_os_family =="amazon"
+    when: ansible_os_family =="RedHat"
