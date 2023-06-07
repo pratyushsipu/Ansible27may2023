@@ -1,9 +1,0 @@
----
-- hosts: mywebserver 
-  become: yes
-  tasks: 
-  - name: install java on ubuntu nodes
-    apt: 
-      name: "{{mywebpackforubuntu}}"
-      state: present 
-    when: ansible_os_family =="ubuntu"  
