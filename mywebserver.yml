@@ -29,15 +29,4 @@
       state: started
     when: ansible_os_family =="RedHat"
 
-  - name: restartwebserver
-    service:
-      name: apache2
-      state: restarted
-
-
-  - name: restartwebserver
-    service:
-      name: httpd
-      state: restarted
-             
-         
+  
