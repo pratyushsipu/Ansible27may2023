@@ -31,13 +31,13 @@
 
   - name: restartwebserver
     service:
-      name: "{{mywebpackforubuntu}}"
+      name: apache2
       state: restarted
 
 
   - name: restartwebserver
     service:
-      name: "{{mywebpackforRedHat}}"
+      name: httpd
       state: restarted
              
          
