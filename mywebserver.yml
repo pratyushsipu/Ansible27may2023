@@ -33,4 +33,11 @@
     service:
       name: "{{mywebpackforubuntu}}"
       state: restarted
+
+
+  - name: restartwebserver
+    service:
+      name: "{{mywebpackforRedHat}}"
+      state: restarted
+             
          
