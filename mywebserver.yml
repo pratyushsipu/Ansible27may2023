@@ -29,7 +29,8 @@
       state: started
     when: ansible_os_family =="RedHat"
 
-- name: restartwebserver
-    service: 
+  - name: restartwebserver
+    service:
       name: "{{mywebpackforubuntu}}"
       state: restarted
+         
